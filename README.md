@@ -33,7 +33,7 @@ Después de entrenar usando los parámetros seleccionados por el usuario, el mod
 
 > **Esta es una excelente forma de comprender los diferentes algoritmos de ML y cómo se ven influenciados al ajustar los hiperparámetros.**
 
-![imagen](Results/Section 1 - Model.PNG)
+![imagen](https://raw.githubusercontent.com/daniel-ccopa/ML-health/refs/heads/main/Results/Section%201%20-%20Model.PNG)
 
 Los 7 modelos (ajustados óptimamente) tuvieron el siguiente rendimiento:
 `Criterio: Exactitud`
@@ -51,9 +51,9 @@ XGBoost | **95.08% / 94.737%**
 
 En esta sección, el usuario puede utilizar cualquier modelo desarrollado anteriormente para predecir su riesgo (Alto / Bajo) usando sus propios valores. (Ya sea para Ataque Cardíaco o Cáncer de Mama)
 
-![imagen](Results/Section 2 - User (1).PNG)
+![imagen](https://raw.githubusercontent.com/daniel-ccopa/ML-health/refs/heads/main/Results/Section%202%20-%20User%20(1).PNG)
 
-![imagen](Results/Section 2 - User (2).PNG)
+![imagen](https://raw.githubusercontent.com/daniel-ccopa/ML-health/refs/heads/main/Results/Section%202%20-%20User%20(2).PNG)
 
 Puedes ver el video final [aquí](Results/Video.mp4).
 
