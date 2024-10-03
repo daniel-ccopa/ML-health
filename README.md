@@ -22,7 +22,7 @@ En esta sección, se construyen 7 modelos diferentes utilizando diversos algorit
 1. Gradient Boosting
 1. XGBoost
 
-Los modelos se entrenan usando los datos disponibles en https://archive.ics.uci.edu/ml/index.php, particularmente los datasets de [Predicción de Ataque Cardíaco](https://github.com/advikmaniar/ML-Heathcare-Web-App/blob/main/Data/heart.csv) y [Cáncer de Mama (Wisconsin)](https://github.com/advikmaniar/ML-Heathcare-Web-App/blob/main/Data/BreastCancer.csv).
+Los modelos se entrenan usando los datos disponibles en https://archive.ics.uci.edu/ml/index.php, particularmente los datasets de [Predicción de Ataque Cardíaco](https://github.com/daniel-ccopa/ML-health/blob/main/Data/heart.csv) y [Cáncer de Mama (Wisconsin)](https://github.com/daniel-ccopa/ML-health/blob/main/Data/BreastCancer.csv).
 
 Se ha creado un panel lateral interactivo utilizando la llamada `st.sidebar` de Streamlit, que permite al usuario realizar las siguientes acciones:
 1. Elegir el conjunto de datos - `Ataque Cardíaco / Cáncer de Mama`
@@ -33,7 +33,7 @@ Después de entrenar usando los parámetros seleccionados por el usuario, el mod
 
 > **Esta es una excelente forma de comprender los diferentes algoritmos de ML y cómo se ven influenciados al ajustar los hiperparámetros.**
 
-![imagen](https://user-images.githubusercontent.com/72503778/123002403-85b73700-d3cf-11eb-80a1-71262561b9c8.png)
+![imagen](Results/Section 1 - Model.PNG)
 
 Los 7 modelos (ajustados óptimamente) tuvieron el siguiente rendimiento:
 `Criterio: Exactitud`
@@ -51,11 +51,11 @@ XGBoost | **95.08% / 94.737%**
 
 En esta sección, el usuario puede utilizar cualquier modelo desarrollado anteriormente para predecir su riesgo (Alto / Bajo) usando sus propios valores. (Ya sea para Ataque Cardíaco o Cáncer de Mama)
 
-![imagen](https://user-images.githubusercontent.com/72503778/123003157-6d93e780-d3d0-11eb-81fc-8dd6abe89efa.png)
+![imagen](Results/Section 2 - User (1).PNG)
 
-![imagen](https://user-images.githubusercontent.com/72503778/123003260-93b98780-d3d0-11eb-9ff0-bb27da6a105e.png)
+![imagen](Results/Section 2 - User (2).PNG)
 
-Puedes ver el video final [aquí](https://github.com/advikmaniar/ML-Healthcare-Web-App/blob/main/Results/Video.mp4).
+Puedes ver el video final [aquí](Results/Video.mp4).
 
 ---
 
