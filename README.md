@@ -1,65 +1,64 @@
 # ML-Healthcare-Web-App
 
-This is an interactive Machine Learning Web App "ML in Healthcare" developed using Python and StreamLit. It uses ML algorithms to build powerful and accurate models to predict the risk (High / Low) of the user of having a Heart Attack or Breast Cancer based on the user's specific attributes like age, sex, heart rate, blood sugar, etc.
+Esta es una aplicación web interactiva de Machine Learning "ML en Salud", desarrollada usando Python y StreamLit. Utiliza algoritmos de Machine Learning para construir modelos precisos y potentes que predicen el riesgo (Alto / Bajo) de que el usuario sufra un ataque cardíaco o cáncer de mama, en función de atributos específicos del usuario como edad, sexo, frecuencia cardíaca, nivel de azúcar en sangre, entre otros.
 
-<h2><b> View App Here: </b></h2>
+## **Ver la Aplicación Aquí:**
 
 [![StreamLit App](https://static.streamlit.io/badges/streamlit_badge_white.svg)](https://share.streamlit.io/advikmaniar/ml-healthcare-web-app/main/ML_Healthcare.py)
 
-<hr>
+---
 
-This applications has two basic sections:
+Esta aplicación tiene dos secciones principales:
 
-<h2>1) - Model Building </h2>
-In this section 7 different models are built using different ML algorithms. They are: 
+## 1) - Construcción de Modelos
 
-```
-1. Logistic Regression 
-2. KNN
-3. SVM 
-4. Decision Trees 
-5. Random Forest 
-6. Gradient Boosting 
-7. XGBoost
-```
-The models are trained using data from https://archive.ics.uci.edu/ml/index.php, particularly the [Heart Attack Prediction](https://github.com/advikmaniar/ML-Heathcare-Web-App/blob/main/Data/heart.csv) and [Breast Cancer (Wisconsin)](https://github.com/advikmaniar/ML-Heathcare-Web-App/blob/main/Data/BreastCancer.csv) datasets.
+En esta sección, se construyen 7 modelos diferentes utilizando diversos algoritmos de Machine Learning. Estos son:
 
-An interactive side-dashboard is created using the streamlit `st.sidebar` call which enables the user to do the following:
-1. Choose dataset - `Heart Attack / Breast Cancer`
-2. Choose algorithm - `Logistic Regression , KNN , SVM , Decision Trees , Random Forest , Gradient Boosting , XGBoost.`
-3. Change the important parameters for each model - `Learning Rate, Random State, Regularization Coeff, Gamma, Kernel, n_estimators` etc. 
+1. Regresión Logística
+1. KNN
+1. SVM
+1. Árboles de Decisión
+1. Random Forest
+1. Gradient Boosting
+1. XGBoost
 
-After training using the parameters selected by the user, the tuned model is built and ready to be tested on our testing data. The classification plot and confusion matrix is displayed for the model selected along with the model metrics: `Accuracy, Precision, Recall, F1-Score, Mean Squared Error, Execution Time`. The user can observe real-time changes in the plots and metrics as they change the model parameters further. 
-> **This is a great way to understand the different ML algorithms and how they are influenced by tuning the hyperparameters.**
-> 
-![image](https://user-images.githubusercontent.com/72503778/123002403-85b73700-d3cf-11eb-80a1-71262561b9c8.png)
+Los modelos se entrenan usando los datos disponibles en https://archive.ics.uci.edu/ml/index.php, particularmente los datasets de [Predicción de Ataque Cardíaco](https://github.com/advikmaniar/ML-Heathcare-Web-App/blob/main/Data/heart.csv) y [Cáncer de Mama (Wisconsin)](https://github.com/advikmaniar/ML-Heathcare-Web-App/blob/main/Data/BreastCancer.csv).
 
-The 7 models (optimum tuning) performed as follows: <br>
-`Criterion: Accuracy`
-Model | Accuracy (Heart Attack / Breast Cancer)
+Se ha creado un panel lateral interactivo utilizando la llamada `st.sidebar` de Streamlit, que permite al usuario realizar las siguientes acciones:
+1. Elegir el conjunto de datos - `Ataque Cardíaco / Cáncer de Mama`
+2. Elegir el algoritmo - `Regresión Logística, KNN, SVM, Árboles de Decisión, Random Forest, Gradient Boosting, XGBoost.`
+3. Modificar los parámetros importantes para cada modelo - `Tasa de Aprendizaje, Random State, Coeficiente de Regularización, Gamma, Kernel, n_estimators`, etc.
+
+Después de entrenar usando los parámetros seleccionados por el usuario, el modelo ajustado se construye y está listo para ser probado con nuestros datos de prueba. Se muestran el gráfico de clasificación y la matriz de confusión para el modelo seleccionado, junto con las métricas del modelo: `Exactitud, Precisión, Recall, F1-Score, Error Cuadrático Medio, Tiempo de Ejecución`. El usuario puede observar cambios en tiempo real en los gráficos y métricas a medida que modifica los parámetros del modelo.
+
+> **Esta es una excelente forma de comprender los diferentes algoritmos de ML y cómo se ven influenciados al ajustar los hiperparámetros.**
+
+![imagen](https://user-images.githubusercontent.com/72503778/123002403-85b73700-d3cf-11eb-80a1-71262561b9c8.png)
+
+Los 7 modelos (ajustados óptimamente) tuvieron el siguiente rendimiento:
+`Criterio: Exactitud`
+Modelo | Exactitud (Ataque Cardíaco / Cáncer de Mama)
 ------------ | -------------
-Logistic Regression | **91.803% / 100.0%**
+Regresión Logística | **91.803% / 100.0%**
 KNN | **86.89% / 96.49%**
 SVM | **93.44% / 100.0%**
-Decision Trees | **52.56% / 60.53%**
+Árboles de Decisión | **52.56% / 60.53%**
 Random Forest | **90.164% / 98.24%**
 Gradient Boosting | **88.53% / 96.49%**
 XGBoost | **95.08% / 94.737%**
 
-<h2>2) - User Prediction </h2>
-In this section, the user can use any model developed above to predict their status (High Risk / Low Risk) using their own values. (Either for Heart Attack or Breast Cancer)
+## 2) - Predicción del Usuario
 
-![image](https://user-images.githubusercontent.com/72503778/123003157-6d93e780-d3d0-11eb-81fc-8dd6abe89efa.png)
+En esta sección, el usuario puede utilizar cualquier modelo desarrollado anteriormente para predecir su riesgo (Alto / Bajo) usando sus propios valores. (Ya sea para Ataque Cardíaco o Cáncer de Mama)
 
-![image](https://user-images.githubusercontent.com/72503778/123003260-93b98780-d3d0-11eb-9ff0-bb27da6a105e.png)
+![imagen](https://user-images.githubusercontent.com/72503778/123003157-6d93e780-d3d0-11eb-81fc-8dd6abe89efa.png)
 
+![imagen](https://user-images.githubusercontent.com/72503778/123003260-93b98780-d3d0-11eb-9ff0-bb27da6a105e.png)
 
-View the final video [here](https://github.com/advikmaniar/ML-Healthcare-Web-App/blob/main/Results/Video.mp4).
-<hr>
+Puedes ver el video final [aquí](https://github.com/advikmaniar/ML-Healthcare-Web-App/blob/main/Results/Video.mp4).
 
-<h1> Thank You! </h1>
+---
 
-<hr>
+# ¡Gracias!
 
-
-
+---
