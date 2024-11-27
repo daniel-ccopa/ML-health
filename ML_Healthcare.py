@@ -80,8 +80,8 @@ st.markdown(
 
 # Títulos
 tit1, tit2 = st.columns((4, 1))
-tit1.markdown("<h1 class='titulo'>Machine Learning en Salud</h1>", unsafe_allow_html=True)
-tit2.image("healthcare2.png")
+tit1.markdown("<h1 class='titulo'>HealthNet-AI: Machine Learning en Salud</h1>", unsafe_allow_html=True)
+tit2.image("HealthNet.png")
 st.sidebar.title("Conjunto de Datos y Clasificador")
 
 dataset_name = st.sidebar.selectbox("Seleccionar Conjunto de Datos: ", ('Ataque Cardíaco', "Cáncer de Mama"))
